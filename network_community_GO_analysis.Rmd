@@ -1,0 +1,265 @@
+---
+title: "Community_GO_analysis"
+author: "Livia Songster"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r,message = FALSE}
+# load necessary packages
+library(pathview)
+library("AnnotationDbi")
+library(clusterProfiler)
+library(largeList)
+library(goseq)
+library(scales)
+library(org.Anidulans.FGSCA4.eg.db)
+library(rrvgo)
+library(ggplot2)
+library(dplyr)
+```
+
+first prepare go list and remove duplicate genes
+
+```{r import data}
+# read in communities
+setwd("~/network biology/aracne")
+lists <- read.csv("communities.csv")
+
+# import full list of Anid genes
+complete_genes <- read.csv("network_labeled_nodes_3.csv")
+# complete_genes <- subset(complete_genes, gene %in% keep)
+colnames(complete_genes)[1] <- "gene"
+
+# now subset all other data tables
+keep <- complete_genes$gene
+
+# import GO annotation of aspergillus
+GOmap <- readList(file = "../WGCNA_aspergillus/Anidulans_genome_files/Anidulans_63_GOmap.llo")
+lengthData <- read.csv("../WGCNA_aspergillus/Anidulans_genome_files/Anidulans_63_genelengths.csv")
+
+# subset length data to data length
+lengthData <- subset(lengthData, gene %in% keep)
+
+```
+
+Write a function to run go analysis
+
+```{r, run go analysis}
+
+genelist = lists$Community.1
+
+# convert gene symbols to gene ids
+genelist <- complete_genes[complete_genes$symbol %in% genelist, "gene"]
+# for some reason AN12335, AN12336, and AN12337 all have the same symbol, acdA. proceed anyways:
+
+run_go_modules <- function(name,genelist) {
+  # where name = genotype/filename
+  # and gene list is a subset dataframe
+
+  module_goseq <- as.data.frame(cbind(keep,"0"))
+  # isSigGene will identify if the gene is in the module of interest
+  colnames(module_goseq) <- c("gene","isSigGene")
+  
+  # find indexes with significant genes - 1 means it is in the module, 0 means not
+  # select gene list for module
+  genelist_goseq = as.data.frame(genelist)
+  colnames(genelist_goseq)[1] <-"gene"
+  
+  for (i in 1:nrow(genelist_goseq)) {
+    # match will find gene in the list 
+    index <- match(genelist_goseq$gene[i],module_goseq$gene)
+    # only populate goi column with 1 if gene is present
+    if (is.na(index) == FALSE) {
+      module_goseq$isSigGene[index] <- 1
+    }
+  }
+  
+  # find indexes of sig genes
+  isSigGene <- module_goseq$isSigGene == 1
+  
+  # format object for goseq function
+  genes <- as.integer(isSigGene) # converts boolean to 1 or 0
+  names(genes) <- module_goseq$gene
+  
+  head(genes)
+  # calculate PWF - normalize go enrichment for gene length
+  
+  pwf=nullp(genes,bias.data=lengthData$length)
+  
+  # map go terms
+  goResults = goseq(pwf,gene2cat=GOmap, use_genes_without_cat=TRUE,method="Hypergeometric")
+  
+  # correct p values for FDR
+  goResults$overrep_padj = p.adjust(goResults$over_represented_pvalue, method = "holm")
+  
+  # export results
+  write.csv(goResults,file.path("GO_Results_community", paste0("GO_results_allontologies_",name,".csv")),row.names=FALSE)
+  
+  head(goResults, n= 10) # peak
+  
+  # subset to only include biological processes / BP
+  # also include only categories with greater or equal to 2 DEGs in the category, and those where the category has greater or equal to 4 genes
+  # and only the significant hits at padj < 0.05
+  
+  goResults_BP <- subset(goResults, ontology == "BP" & numDEInCat >= 5 & numInCat  >= 15 & over_represented_pvalue < 0.05)
+  
+  if (nrow(goResults_BP) != 0) {
+    
+    head(goResults_BP, n = 10) # peak
+    
+    # plot top 15 results
+    goResults_BP %>% 
+      top_n(15, wt=-over_represented_pvalue) %>% # identify top 30 by adjusted p value
+      mutate(hitsPerc=numDEInCat*100/numInCat) %>% 
+      ggplot(aes(x=hitsPerc, 
+                 y=term, 
+                 colour=over_represented_pvalue, 
+                 size=numDEInCat)) +
+      geom_point() +
+      expand_limits(x=0) +
+      labs(x="Hits (%)", y="GO term", colour="p val", size="Count", title = paste0(name," Biological Processes")) +
+      theme(axis.text = element_text(size = 5)) +
+      theme_bw() +
+      scale_y_discrete(labels = label_wrap(50))
+    
+    # ggsave it
+    ggsave(filename = file.path("GO_Results_community", paste0(name,"_biological_processes_graph",".png")),
+           plot = last_plot(),
+           width = 6,
+           height = 6,
+           units = "in",
+           dpi = 300)
+  
+  }
+  
+  # subset to only include cellular compartments / CC
+  goResults_CC <- subset(goResults, ontology == "CC" & numDEInCat >= 5 & numInCat  >= 15 & over_represented_pvalue < 0.05)
+  
+  if (nrow(goResults_CC) != 0) {
+    
+    head(goResults_CC, n = 10) # peak
+    
+    # plot top 15 results
+    goResults_CC %>% 
+      top_n(15, wt=-over_represented_pvalue) %>% # identify top 30 by adjusted p value
+      mutate(hitsPerc=numDEInCat*100/numInCat) %>% 
+      ggplot(aes(x=hitsPerc, 
+                 y=term, 
+                 colour=over_represented_pvalue, 
+                 size=numDEInCat)) +
+      geom_point() +
+      expand_limits(x=0) +
+      labs(x="Hits (%)", y="GO term", colour="p val", size="Count", title = paste0(name," Cellular Components")) +
+      theme(axis.text = element_text(size = 5)) +
+      theme_bw() +
+      scale_y_discrete(labels = label_wrap(50))
+    
+    ggsave(filename = file.path("GO_Results_community", paste0(name,"_cellular_components_graph",".png")),
+           plot = last_plot(),
+           width = 6,
+           height = 6,
+           units = "in",
+           dpi = 300)
+  
+  }
+  # subset to only include molecular function / MF
+  goResults_MF <- subset(goResults, ontology == "MF" & numDEInCat >= 5 & numInCat  >= 15 & over_represented_pvalue < 0.05)
+  
+  if (nrow(goResults_MF) != 0) {
+    head(goResults_CC, n = 10) # peak
+    
+    # plot top 15 results
+    goResults_MF %>% 
+      top_n(15, wt=-over_represented_pvalue) %>% # identify top 30 by adjusted p value
+      mutate(hitsPerc=numDEInCat*100/numInCat) %>% 
+      ggplot(aes(x=hitsPerc, 
+                 y=term, 
+                 colour=over_represented_pvalue, 
+                 size=numDEInCat)) +
+      geom_point() +
+      expand_limits(x=0) +
+      labs(x="Hits (%)", y="GO term", colour="p val", size="Count", title = paste0(name," Molecular Functions")) +
+      theme(axis.text = element_text(size = 5)) +
+      theme_bw() +
+      scale_y_discrete(labels = label_wrap(50))
+    
+    ggsave(filename = file.path("GO_Results_community", paste0(name,"_molecular_functions_graph",".png")),
+           plot = last_plot(),
+           width = 6,
+           height = 6,
+           units = "in",
+           dpi = 300)
+  }
+  
+}
+
+# try for community 1
+run_go_modules("Community1",genelist2)
+
+# Create the list variable
+n <- 1:34
+list <- paste0("Community", n)
+
+# now run function on all communities
+for(i in 1:length(list)) {
+  name = list[i]
+
+  # subset genelist
+  genelist = lists[,i]
+  
+  # convert to symbols
+  genelist <- complete_genes[complete_genes$symbol %in% genelist, "gene"]
+
+  
+  # make a plot
+  run_go_modules(name,genelist)
+}
+
+
+```
+
+Generate nice GO graphs
+```{r rrvgo graphs}
+
+plot_rrvgo <- function(name, threshold) {
+  goResults <- read.csv(file.path("GO_Results_community", paste0("GO_results_allontologies_",name,".csv")))
+  goResults_BP <- subset(goResults, ontology == "BP" & over_represented_pvalue < 0.05)
+  go_terms <- goResults_BP$category
+  p_values <- goResults_BP$over_represented_pvalue
+  # calculate similarity between go terms
+  simMatrix <- calculateSimMatrix(
+    go_terms,
+    orgdb = "org.Anidulans.FGSCA4.eg.db",
+    ont = "BP",
+    method = "Rel",
+    keytype = "ASPGD_ID")
+    
+  scores <- setNames(-log10(p_values), go_terms)
+  
+  # reduce the matrix
+  reducedTerms <- reduceSimMatrix(
+    simMatrix,
+    scores,
+    threshold = threshold,
+    orgdb = "org.Anidulans.FGSCA4.eg.db",
+    keytype = "ASPGD_ID")
+  scatterPlot(simMatrix, reducedTerms)
+  return(reducedTerms)
+}
+
+#results <- plot_rrvgo("entry",0.9)
+#treemapPlot(results)
+
+results7 <- plot_rrvgo("Community7",0.9)
+treemapPlot(results7)
+
+results11 <- plot_rrvgo("Community11",0.9)
+treemapPlot(results11)
+
+results15 <- plot_rrvgo("Community15",0.9)
+treemapPlot(results15)
+
+
+
+```

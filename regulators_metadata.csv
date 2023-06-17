@@ -1,0 +1,726 @@
+gene,node_type,source
+AN4483,Kinase,De Souza et al. 2013 PLoS One
+AN4536,Kinase,De Souza et al. 2013 PLoS One
+AN4563,Kinase,De Souza et al. 2013 PLoS One
+AN4668,Kinase,De Souza et al. 2013 PLoS One
+AN4717,Kinase,De Souza et al. 2013 PLoS One
+AN4887,Kinase,De Souza et al. 2013 PLoS One
+AN4935,Kinase,De Souza et al. 2013 PLoS One
+AN4936,Kinase,De Souza et al. 2013 PLoS One
+AN4980,Kinase,De Souza et al. 2013 PLoS One
+AN5494,Kinase,De Souza et al. 2013 PLoS One
+AN5529,Kinase,De Souza et al. 2013 PLoS One
+AN5674,Kinase,De Souza et al. 2013 PLoS One
+AN5757,Kinase,De Souza et al. 2013 PLoS One
+AN5759,Kinase,De Souza et al. 2013 PLoS One
+AN5815,Kinase,De Souza et al. 2013 PLoS One
+AN5973,Kinase,De Souza et al. 2013 PLoS One
+AN6044,Kinase,De Souza et al. 2013 PLoS One
+AN6243,Kinase,De Souza et al. 2013 PLoS One
+AN6305,Kinase,De Souza et al. 2013 PLoS One
+AN6339,Kinase,De Souza et al. 2013 PLoS One
+AN6347,Kinase,De Souza et al. 2013 PLoS One
+AN6508,Kinase,De Souza et al. 2013 PLoS One
+AN7104,Kinase,De Souza et al. 2013 PLoS One
+AN7185,Kinase,De Souza et al. 2013 PLoS One
+AN7537,Kinase,De Souza et al. 2013 PLoS One
+AN7563,Kinase,De Souza et al. 2013 PLoS One
+AN7572,Kinase,De Souza et al. 2013 PLoS One
+AN7678,Kinase,De Souza et al. 2013 PLoS One
+AN7695,Kinase,De Souza et al. 2013 PLoS One
+AN7737,Kinase,De Souza et al. 2013 PLoS One
+AN8190,Kinase,De Souza et al. 2013 PLoS One
+AN8261,Kinase,De Souza et al. 2013 PLoS One
+AN8285,Kinase,De Souza et al. 2013 PLoS One
+AN8751,Kinase,De Souza et al. 2013 PLoS One
+AN8827,Kinase,De Souza et al. 2013 PLoS One
+AN8836,Kinase,De Souza et al. 2013 PLoS One
+AN8865,Kinase,De Souza et al. 2013 PLoS One
+AN9504,Kinase,De Souza et al. 2013 PLoS One
+AN0038,Kinase,De Souza et al. 2013 PLoS One
+AN0106,Kinase,De Souza et al. 2013 PLoS One
+AN0124,Kinase,De Souza et al. 2013 PLoS One
+AN0144,Kinase,De Souza et al. 2013 PLoS One
+AN0235,Kinase,De Souza et al. 2013 PLoS One
+AN0576,Kinase,De Souza et al. 2013 PLoS One
+AN0699,Kinase,De Souza et al. 2013 PLoS One
+AN0822,Kinase,De Souza et al. 2013 PLoS One
+AN0931,Kinase,De Souza et al. 2013 PLoS One
+AN0988,Kinase,De Souza et al. 2013 PLoS One
+AN10019,Kinase,De Souza et al. 2013 PLoS One
+AN10082,Kinase,De Souza et al. 2013 PLoS One
+AN10153,Kinase,De Souza et al. 2013 PLoS One
+AN1017,Kinase,De Souza et al. 2013 PLoS One
+AN10193,Kinase,De Souza et al. 2013 PLoS One
+AN10325,Kinase,De Souza et al. 2013 PLoS One
+AN10462,Kinase,De Souza et al. 2013 PLoS One
+AN10485,Kinase,De Souza et al. 2013 PLoS One
+AN10515,Kinase,De Souza et al. 2013 PLoS One
+AN10791,Kinase,De Souza et al. 2013 PLoS One
+AN10800,Kinase,De Souza et al. 2013 PLoS One
+AN10819,Kinase,De Souza et al. 2013 PLoS One
+AN10869,Kinase,De Souza et al. 2013 PLoS One
+AN10895,Kinase,De Souza et al. 2013 PLoS One
+AN10937,Kinase,De Souza et al. 2013 PLoS One
+AN1097,Kinase,De Souza et al. 2013 PLoS One
+AN11032,Kinase,De Souza et al. 2013 PLoS One
+AN11101,Kinase,De Souza et al. 2013 PLoS One
+AN1171,Kinase,De Souza et al. 2013 PLoS One
+AN1315,Kinase,De Souza et al. 2013 PLoS One
+AN1485,Kinase,De Souza et al. 2013 PLoS One
+AN1560,Kinase,De Souza et al. 2013 PLoS One
+AN1632,Kinase,De Souza et al. 2013 PLoS One
+AN1665,Kinase,De Souza et al. 2013 PLoS One
+AN1789,Kinase,De Souza et al. 2013 PLoS One
+AN1800,Kinase,De Souza et al. 2013 PLoS One
+AN1867,Kinase,De Souza et al. 2013 PLoS One
+AN2054,Kinase,De Souza et al. 2013 PLoS One
+AN2067,Kinase,De Souza et al. 2013 PLoS One
+AN2246,Kinase,De Souza et al. 2013 PLoS One
+AN2265,Kinase,De Souza et al. 2013 PLoS One
+AN2269,Kinase,De Souza et al. 2013 PLoS One
+AN2363,Kinase,De Souza et al. 2013 PLoS One
+AN2373,Kinase,De Souza et al. 2013 PLoS One
+AN2412,Kinase,De Souza et al. 2013 PLoS One
+AN2489,Kinase,De Souza et al. 2013 PLoS One
+AN2581,Kinase,De Souza et al. 2013 PLoS One
+AN2927,Kinase,De Souza et al. 2013 PLoS One
+AN2943,Kinase,De Souza et al. 2013 PLoS One
+AN3001,Kinase,De Souza et al. 2013 PLoS One
+AN3065,Kinase,De Souza et al. 2013 PLoS One
+AN3101,Kinase,De Souza et al. 2013 PLoS One
+AN3102,Kinase,De Souza et al. 2013 PLoS One
+AN3110,Kinase,De Souza et al. 2013 PLoS One
+AN3214,Kinase,De Souza et al. 2013 PLoS One
+AN3422,Kinase,De Souza et al. 2013 PLoS One
+AN3450,Kinase,De Souza et al. 2013 PLoS One
+AN3719,Kinase,De Souza et al. 2013 PLoS One
+AN3946,Kinase,De Souza et al. 2013 PLoS One
+AN4113,Kinase,De Souza et al. 2013 PLoS One
+AN4182,Kinase,De Souza et al. 2013 PLoS One
+AN4189,Kinase,De Souza et al. 2013 PLoS One
+AN4196,Kinase,De Souza et al. 2013 PLoS One
+AN4238,Kinase,De Souza et al. 2013 PLoS One
+AN4278,Kinase,De Souza et al. 2013 PLoS One
+AN4279,Kinase,De Souza et al. 2013 PLoS One
+AN4322,Kinase,De Souza et al. 2013 PLoS One
+AN4385,Kinase,De Souza et al. 2013 PLoS One
+AN4447,Kinase,De Souza et al. 2013 PLoS One
+AN4479,Kinase,De Souza et al. 2013 PLoS One
+AN4709,Kinase,De Souza et al. 2013 PLoS One
+AN4818,Kinase,De Souza et al. 2013 PLoS One
+AN5296,Kinase,De Souza et al. 2013 PLoS One
+AN5511,Kinase,De Souza et al. 2013 PLoS One
+AN5666,Kinase,De Souza et al. 2013 PLoS One
+AN5728,Kinase,De Souza et al. 2013 PLoS One
+AN5822,Kinase,De Souza et al. 2013 PLoS One
+AN5982,Kinase,De Souza et al. 2013 PLoS One
+AN6192,Kinase,De Souza et al. 2013 PLoS One
+AN6207,Kinase,De Souza et al. 2013 PLoS One
+AN6363,Kinase,De Souza et al. 2013 PLoS One
+AN6758,Kinase,De Souza et al. 2013 PLoS One
+AN6768,Kinase,De Souza et al. 2013 PLoS One
+AN6820,Kinase,De Souza et al. 2013 PLoS One
+AN6975,Kinase,De Souza et al. 2013 PLoS One
+AN7321,Kinase,De Souza et al. 2013 PLoS One
+AN7945,Kinase,De Souza et al. 2013 PLoS One
+AN7986,Kinase,De Souza et al. 2013 PLoS One
+AN8830,Kinase,De Souza et al. 2013 PLoS One
+AN9008,Kinase,De Souza et al. 2013 PLoS One
+AN9048,Kinase,De Souza et al. 2013 PLoS One
+AN9302,Kinase,De Souza et al. 2013 PLoS One
+AN9461,Kinase,De Souza et al. 2013 PLoS One
+AN0026,Transcription factor,Extebeste et al. 2021
+AN0094,Transcription factor,Extebeste et al. 2021
+AN0096,Transcription factor,Extebeste et al. 2021
+AN0098,Transcription factor,Extebeste et al. 2021
+AN0148,Transcription factor,Extebeste et al. 2021
+AN0162,Transcription factor,Extebeste et al. 2021
+AN0176,Transcription factor,Extebeste et al. 2021
+AN0197,Transcription factor,Extebeste et al. 2021
+AN0202,Transcription factor,Extebeste et al. 2021
+AN0223,Transcription factor,Extebeste et al. 2021
+AN0273,Transcription factor,Extebeste et al. 2021
+AN0274,Transcription factor,Extebeste et al. 2021
+AN0279,Transcription factor,Extebeste et al. 2021
+AN0333,Transcription factor,Extebeste et al. 2021
+AN0363,Transcription factor,Extebeste et al. 2021
+AN0364,Transcription factor,Extebeste et al. 2021
+AN0388,Transcription factor,Extebeste et al. 2021
+AN0396,Transcription factor,Extebeste et al. 2021
+AN0422,Transcription factor,Extebeste et al. 2021
+AN0486,Transcription factor,Extebeste et al. 2021
+AN0507,Transcription factor,Extebeste et al. 2021
+AN0533,Transcription factor,Extebeste et al. 2021
+AN0568,Transcription factor,Extebeste et al. 2021
+AN0569,Transcription factor,Extebeste et al. 2021
+AN0578,Transcription factor,Extebeste et al. 2021
+AN0585,Transcription factor,Extebeste et al. 2021
+AN0619,Transcription factor,Extebeste et al. 2021
+AN0644,Transcription factor,Extebeste et al. 2021
+AN0658,Transcription factor,Extebeste et al. 2021
+AN0671,Transcription factor,Extebeste et al. 2021
+AN0680,Transcription factor,Extebeste et al. 2021
+AN0689,Transcription factor,Extebeste et al. 2021
+AN0709,Transcription factor,Extebeste et al. 2021
+AN0714,Transcription factor,Extebeste et al. 2021
+AN0718,Transcription factor,Extebeste et al. 2021
+AN0738,Transcription factor,Extebeste et al. 2021
+AN0742,Transcription factor,Extebeste et al. 2021
+AN0766,Transcription factor,Extebeste et al. 2021
+AN0817,Transcription factor,Extebeste et al. 2021
+AN0825,Transcription factor,Extebeste et al. 2021
+AN0835,Transcription factor,Extebeste et al. 2021
+AN0853,Transcription factor,Extebeste et al. 2021
+AN0863,Transcription factor,Extebeste et al. 2021
+AN0885,Transcription factor,Extebeste et al. 2021
+AN0891,Transcription factor,Extebeste et al. 2021
+AN0902,Transcription factor,Extebeste et al. 2021
+AN0928,Transcription factor,Extebeste et al. 2021
+AN0937,Transcription factor,Extebeste et al. 2021
+AN0973,Transcription factor,Extebeste et al. 2021
+AN10059,Transcription factor,Extebeste et al. 2021
+AN10068,Transcription factor,Extebeste et al. 2021
+AN10083,Transcription factor,Extebeste et al. 2021
+AN10105,Transcription factor,Extebeste et al. 2021
+AN10120,Transcription factor,Extebeste et al. 2021
+AN10128,Transcription factor,Extebeste et al. 2021
+AN10132,Transcription factor,Extebeste et al. 2021
+AN10192,Transcription factor,Extebeste et al. 2021
+AN10262,Transcription factor,Extebeste et al. 2021
+AN1028,Transcription factor,Extebeste et al. 2021
+AN1029,Transcription factor,Extebeste et al. 2021
+AN10294,Transcription factor,Extebeste et al. 2021
+AN10295,Transcription factor,Extebeste et al. 2021
+AN10300,Transcription factor,Extebeste et al. 2021
+AN10331,Transcription factor,Extebeste et al. 2021
+AN10334,Transcription factor,Extebeste et al. 2021
+AN10378,Transcription factor,Extebeste et al. 2021
+AN10384,Transcription factor,Extebeste et al. 2021
+AN10423,Transcription factor,Extebeste et al. 2021
+AN10432,Transcription factor,Extebeste et al. 2021
+AN10463,Transcription factor,Extebeste et al. 2021
+AN10467,Transcription factor,Extebeste et al. 2021
+AN10491,Transcription factor,Extebeste et al. 2021
+AN10504,Transcription factor,Extebeste et al. 2021
+AN10517,Transcription factor,Extebeste et al. 2021
+AN1052,Transcription factor,Extebeste et al. 2021
+AN10541,Transcription factor,Extebeste et al. 2021
+AN10543,Transcription factor,Extebeste et al. 2021
+AN10548,Transcription factor,Extebeste et al. 2021
+AN10550,Transcription factor,Extebeste et al. 2021
+AN10597,Transcription factor,Extebeste et al. 2021
+AN10600,Transcription factor,Extebeste et al. 2021
+AN10606,Transcription factor,Extebeste et al. 2021
+AN10623,Transcription factor,Extebeste et al. 2021
+AN10638,Transcription factor,Extebeste et al. 2021
+AN10659,Transcription factor,Extebeste et al. 2021
+AN10697,Transcription factor,Extebeste et al. 2021
+AN10763,Transcription factor,Extebeste et al. 2021
+AN1077,Transcription factor,Extebeste et al. 2021
+AN10775,Transcription factor,Extebeste et al. 2021
+AN10789,Transcription factor,Extebeste et al. 2021
+AN10809,Transcription factor,Extebeste et al. 2021
+AN10897,Transcription factor,Extebeste et al. 2021
+AN10906,Transcription factor,Extebeste et al. 2021
+AN10910,Transcription factor,Extebeste et al. 2021
+AN10911,Transcription factor,Extebeste et al. 2021
+AN10912,Transcription factor,Extebeste et al. 2021
+AN10957,Transcription factor,Extebeste et al. 2021
+AN10961,Transcription factor,Extebeste et al. 2021
+AN10976,Transcription factor,Extebeste et al. 2021
+AN10979,Transcription factor,Extebeste et al. 2021
+AN11003,Transcription factor,Extebeste et al. 2021
+AN11093,Transcription factor,Extebeste et al. 2021
+AN11098,Transcription factor,Extebeste et al. 2021
+AN11099,Transcription factor,Extebeste et al. 2021
+AN11112,Transcription factor,Extebeste et al. 2021
+AN1114,Transcription factor,Extebeste et al. 2021
+AN11165,Transcription factor,Extebeste et al. 2021
+AN11169,Transcription factor,Extebeste et al. 2021
+AN11185,Transcription factor,Extebeste et al. 2021
+AN11195,Transcription factor,Extebeste et al. 2021
+AN11197,Transcription factor,Extebeste et al. 2021
+AN11212,Transcription factor,Extebeste et al. 2021
+AN11216,Transcription factor,Extebeste et al. 2021
+AN11222,Transcription factor,Extebeste et al. 2021
+AN11228,Transcription factor,Extebeste et al. 2021
+AN1123,Transcription factor,Extebeste et al. 2021
+AN1134,Transcription factor,Extebeste et al. 2021
+AN11753,Transcription factor,Extebeste et al. 2021
+AN11793,Transcription factor,Extebeste et al. 2021
+AN11809,Transcription factor,Extebeste et al. 2021
+AN11818,Transcription factor,Extebeste et al. 2021
+AN1183,Transcription factor,Extebeste et al. 2021
+AN11891,Transcription factor,Extebeste et al. 2021
+AN11950,Transcription factor,Extebeste et al. 2021
+AN11962,Transcription factor,Extebeste et al. 2021
+AN1200,Transcription factor,Extebeste et al. 2021
+AN12029,Transcription factor,Extebeste et al. 2021
+AN1212,Transcription factor,Extebeste et al. 2021
+AN12120,Transcription factor,Extebeste et al. 2021
+AN12132,Transcription factor,Extebeste et al. 2021
+AN12148,Transcription factor,Extebeste et al. 2021
+AN1217,Transcription factor,Extebeste et al. 2021
+AN12293,Transcription factor,Extebeste et al. 2021
+AN12314,Transcription factor,Extebeste et al. 2021
+AN1232,Transcription factor,Extebeste et al. 2021
+AN12338,Transcription factor,Extebeste et al. 2021
+AN12442,Transcription factor,Extebeste et al. 2021
+AN12489,Transcription factor,Extebeste et al. 2021
+AN1251,Transcription factor,Extebeste et al. 2021
+AN1254,Transcription factor,Extebeste et al. 2021
+AN1265,Transcription factor,Extebeste et al. 2021
+AN1298,Transcription factor,Extebeste et al. 2021
+AN13001,Transcription factor,Extebeste et al. 2021
+AN1303,Transcription factor,Extebeste et al. 2021
+AN1368,Transcription factor,Extebeste et al. 2021
+AN1402,Transcription factor,Extebeste et al. 2021
+AN1406,Transcription factor,Extebeste et al. 2021
+AN1425,Transcription factor,Extebeste et al. 2021
+AN1437,Transcription factor,Extebeste et al. 2021
+AN1438,Transcription factor,Extebeste et al. 2021
+AN1500,Transcription factor,Extebeste et al. 2021
+AN1518,Transcription factor,Extebeste et al. 2021
+AN1533,Transcription factor,Extebeste et al. 2021
+AN1536,Transcription factor,Extebeste et al. 2021
+AN1569,Transcription factor,Extebeste et al. 2021
+AN1584,Transcription factor,Extebeste et al. 2021
+AN1599,Transcription factor,Extebeste et al. 2021
+AN1641,Transcription factor,Extebeste et al. 2021
+AN1649,Transcription factor,Extebeste et al. 2021
+AN1652,Transcription factor,Extebeste et al. 2021
+AN1678,Transcription factor,Extebeste et al. 2021
+AN1705,Transcription factor,Extebeste et al. 2021
+AN1729,Transcription factor,Extebeste et al. 2021
+AN1736,Transcription factor,Extebeste et al. 2021
+AN1812,Transcription factor,Extebeste et al. 2021
+AN1824,Transcription factor,Extebeste et al. 2021
+AN1829,Transcription factor,Extebeste et al. 2021
+AN1848,Transcription factor,Extebeste et al. 2021
+AN1869,Transcription factor,Extebeste et al. 2021
+AN1875,Transcription factor,Extebeste et al. 2021
+AN1893,Transcription factor,Extebeste et al. 2021
+AN1924,Transcription factor,Extebeste et al. 2021
+AN1927,Transcription factor,Extebeste et al. 2021
+AN1959,Transcription factor,Extebeste et al. 2021
+AN1997,Transcription factor,Extebeste et al. 2021
+AN2001,Transcription factor,Extebeste et al. 2021
+AN2009,Transcription factor,Extebeste et al. 2021
+AN2016,Transcription factor,Extebeste et al. 2021
+AN2020,Transcription factor,Extebeste et al. 2021
+AN2025,Transcription factor,Extebeste et al. 2021
+AN2036,Transcription factor,Extebeste et al. 2021
+AN2059,Transcription factor,Extebeste et al. 2021
+AN2122,Transcription factor,Extebeste et al. 2021
+AN2136,Transcription factor,Extebeste et al. 2021
+AN2241,Transcription factor,Extebeste et al. 2021
+AN2270,Transcription factor,Extebeste et al. 2021
+AN2290,Transcription factor,Extebeste et al. 2021
+AN2324,Transcription factor,Extebeste et al. 2021
+AN2354,Transcription factor,Extebeste et al. 2021
+AN2367,Transcription factor,Extebeste et al. 2021
+AN2375,Transcription factor,Extebeste et al. 2021
+AN2392,Transcription factor,Extebeste et al. 2021
+AN2421,Transcription factor,Extebeste et al. 2021
+AN2422,Transcription factor,Extebeste et al. 2021
+AN2498,Transcription factor,Extebeste et al. 2021
+AN2553,Transcription factor,Extebeste et al. 2021
+AN2597,Transcription factor,Extebeste et al. 2021
+AN2615,Transcription factor,Extebeste et al. 2021
+AN2644,Transcription factor,Extebeste et al. 2021
+AN2650,Transcription factor,Extebeste et al. 2021
+AN2667,Transcription factor,Extebeste et al. 2021
+AN2672,Transcription factor,Extebeste et al. 2021
+AN2677,Transcription factor,Extebeste et al. 2021
+AN2681,Transcription factor,Extebeste et al. 2021
+AN2700,Transcription factor,Extebeste et al. 2021
+AN2718,Transcription factor,Extebeste et al. 2021
+AN2725,Transcription factor,Extebeste et al. 2021
+AN2748,Transcription factor,Extebeste et al. 2021
+AN2755,Transcription factor,Extebeste et al. 2021
+AN2763,Transcription factor,Extebeste et al. 2021
+AN2780,Transcription factor,Extebeste et al. 2021
+AN2782,Transcription factor,Extebeste et al. 2021
+AN2785,Transcription factor,Extebeste et al. 2021
+AN2811,Transcription factor,Extebeste et al. 2021
+AN2826,Transcription factor,Extebeste et al. 2021
+AN2839,Transcription factor,Extebeste et al. 2021
+AN2852,Transcription factor,Extebeste et al. 2021
+AN2854,Transcription factor,Extebeste et al. 2021
+AN2855,Transcription factor,Extebeste et al. 2021
+AN2911,Transcription factor,Extebeste et al. 2021
+AN2919,Transcription factor,Extebeste et al. 2021
+AN2944,Transcription factor,Extebeste et al. 2021
+AN2957,Transcription factor,Extebeste et al. 2021
+AN2984,Transcription factor,Extebeste et al. 2021
+AN3050,Transcription factor,Extebeste et al. 2021
+AN3074,Transcription factor,Extebeste et al. 2021
+AN3075,Transcription factor,Extebeste et al. 2021
+AN3108,Transcription factor,Extebeste et al. 2021
+AN3120,Transcription factor,Extebeste et al. 2021
+AN3152,Transcription factor,Extebeste et al. 2021
+AN3154,Transcription factor,Extebeste et al. 2021
+AN3216,Transcription factor,Extebeste et al. 2021
+AN3217,Transcription factor,Extebeste et al. 2021
+AN3250,Transcription factor,Extebeste et al. 2021
+AN3269,Transcription factor,Extebeste et al. 2021
+AN3280,Transcription factor,Extebeste et al. 2021
+AN3290,Transcription factor,Extebeste et al. 2021
+AN3300,Transcription factor,Extebeste et al. 2021
+AN3356,Transcription factor,Extebeste et al. 2021
+AN3369,Transcription factor,Extebeste et al. 2021
+AN3385,Transcription factor,Extebeste et al. 2021
+AN3391,Transcription factor,Extebeste et al. 2021
+AN3420,Transcription factor,Extebeste et al. 2021
+AN3433,Transcription factor,Extebeste et al. 2021
+AN3435,Transcription factor,Extebeste et al. 2021
+AN3501,Transcription factor,Extebeste et al. 2021
+AN3502,Transcription factor,Extebeste et al. 2021
+AN3506,Transcription factor,Extebeste et al. 2021
+AN3607,Transcription factor,Extebeste et al. 2021
+AN3637,Transcription factor,Extebeste et al. 2021
+AN3650,Transcription factor,Extebeste et al. 2021
+AN3675,Transcription factor,Extebeste et al. 2021
+AN3683,Transcription factor,Extebeste et al. 2021
+AN3684,Transcription factor,Extebeste et al. 2021
+AN3768,Transcription factor,Extebeste et al. 2021
+AN3769,Transcription factor,Extebeste et al. 2021
+AN3835,Transcription factor,Extebeste et al. 2021
+AN3863,Transcription factor,Extebeste et al. 2021
+AN3868,Transcription factor,Extebeste et al. 2021
+AN3900,Transcription factor,Extebeste et al. 2021
+AN3911,Transcription factor,Extebeste et al. 2021
+AN3986,Transcription factor,Extebeste et al. 2021
+AN4001,Transcription factor,Extebeste et al. 2021
+AN4013,Transcription factor,Extebeste et al. 2021
+AN4021,Transcription factor,Extebeste et al. 2021
+AN4026,Transcription factor,Extebeste et al. 2021
+AN4034,Transcription factor,Extebeste et al. 2021
+AN4035,Transcription factor,Extebeste et al. 2021
+AN4096,Transcription factor,Extebeste et al. 2021
+AN4118,Transcription factor,Extebeste et al. 2021
+AN4123,Transcription factor,Extebeste et al. 2021
+AN4175,Transcription factor,Extebeste et al. 2021
+AN4181,Transcription factor,Extebeste et al. 2021
+AN4185,Transcription factor,Extebeste et al. 2021
+AN4247,Transcription factor,Extebeste et al. 2021
+AN4263,Transcription factor,Extebeste et al. 2021
+AN4324,Transcription factor,Extebeste et al. 2021
+AN4343,Transcription factor,Extebeste et al. 2021
+AN4361,Transcription factor,Extebeste et al. 2021
+AN4394,Transcription factor,Extebeste et al. 2021
+AN4418,Transcription factor,Extebeste et al. 2021
+AN4486,Transcription factor,Extebeste et al. 2021
+AN4489,Transcription factor,Extebeste et al. 2021
+AN4521,Transcription factor,Extebeste et al. 2021
+AN4524,Transcription factor,Extebeste et al. 2021
+AN4527,Transcription factor,Extebeste et al. 2021
+AN4542,Transcription factor,Extebeste et al. 2021
+AN4558,Transcription factor,Extebeste et al. 2021
+AN4562,Transcription factor,Extebeste et al. 2021
+AN4586,Transcription factor,Extebeste et al. 2021
+AN4606,Transcription factor,Extebeste et al. 2021
+AN4618,Transcription factor,Extebeste et al. 2021
+AN4626,Transcription factor,Extebeste et al. 2021
+AN4720,Transcription factor,Extebeste et al. 2021
+AN4734,Transcription factor,Extebeste et al. 2021
+AN4744,Transcription factor,Extebeste et al. 2021
+AN4773,Transcription factor,Extebeste et al. 2021
+AN4785,Transcription factor,Extebeste et al. 2021
+AN4797,Transcription factor,Extebeste et al. 2021
+AN4801,Transcription factor,Extebeste et al. 2021
+AN4821,Transcription factor,Extebeste et al. 2021
+AN4837,Transcription factor,Extebeste et al. 2021
+AN4873,Transcription factor,Extebeste et al. 2021
+AN4900,Transcription factor,Extebeste et al. 2021
+AN4933,Transcription factor,Extebeste et al. 2021
+AN4972,Transcription factor,Extebeste et al. 2021
+AN4985,Transcription factor,Extebeste et al. 2021
+AN5003,Transcription factor,Extebeste et al. 2021
+AN5040,Transcription factor,Extebeste et al. 2021
+AN5048,Transcription factor,Extebeste et al. 2021
+AN5052,Transcription factor,Extebeste et al. 2021
+AN5070,Transcription factor,Extebeste et al. 2021
+AN5078,Transcription factor,Extebeste et al. 2021
+AN5118,Transcription factor,Extebeste et al. 2021
+AN5170,Transcription factor,Extebeste et al. 2021
+AN5182,Transcription factor,Extebeste et al. 2021
+AN5218,Transcription factor,Extebeste et al. 2021
+AN5220,Transcription factor,Extebeste et al. 2021
+AN5225,Transcription factor,Extebeste et al. 2021
+AN5252,Transcription factor,Extebeste et al. 2021
+AN5259,Transcription factor,Extebeste et al. 2021
+AN5274,Transcription factor,Extebeste et al. 2021
+AN5279,Transcription factor,Extebeste et al. 2021
+AN5294,Transcription factor,Extebeste et al. 2021
+AN5299,Transcription factor,Extebeste et al. 2021
+AN5342,Transcription factor,Extebeste et al. 2021
+AN5349,Transcription factor,Extebeste et al. 2021
+AN5390,Transcription factor,Extebeste et al. 2021
+AN5405,Transcription factor,Extebeste et al. 2021
+AN5412,Transcription factor,Extebeste et al. 2021
+AN5431,Transcription factor,Extebeste et al. 2021
+AN5464,Transcription factor,Extebeste et al. 2021
+AN5510,Transcription factor,Extebeste et al. 2021
+AN5533,Transcription factor,Extebeste et al. 2021
+AN5555,Transcription factor,Extebeste et al. 2021
+AN5583,Transcription factor,Extebeste et al. 2021
+AN5609,Transcription factor,Extebeste et al. 2021
+AN5651,Transcription factor,Extebeste et al. 2021
+AN5659,Transcription factor,Extebeste et al. 2021
+AN5691,Transcription factor,Extebeste et al. 2021
+AN5726,Transcription factor,Extebeste et al. 2021
+AN5775,Transcription factor,Extebeste et al. 2021
+AN5808,Transcription factor,Extebeste et al. 2021
+AN5836,Transcription factor,Extebeste et al. 2021
+AN5849,Transcription factor,Extebeste et al. 2021
+AN5859,Transcription factor,Extebeste et al. 2021
+AN5870,Transcription factor,Extebeste et al. 2021
+AN5924,Transcription factor,Extebeste et al. 2021
+AN5929,Transcription factor,Extebeste et al. 2021
+AN5955,Transcription factor,Extebeste et al. 2021
+AN5966,Transcription factor,Extebeste et al. 2021
+AN6030,Transcription factor,Extebeste et al. 2021
+AN6062,Transcription factor,Extebeste et al. 2021
+AN6091,Transcription factor,Extebeste et al. 2021
+AN6129,Transcription factor,Extebeste et al. 2021
+AN6154,Transcription factor,Extebeste et al. 2021
+AN6173,Transcription factor,Extebeste et al. 2021
+AN6195,Transcription factor,Extebeste et al. 2021
+AN6218,Transcription factor,Extebeste et al. 2021
+AN6221,Transcription factor,Extebeste et al. 2021
+AN6293,Transcription factor,Extebeste et al. 2021
+AN6295,Transcription factor,Extebeste et al. 2021
+AN6315,Transcription factor,Extebeste et al. 2021
+AN6322,Transcription factor,Extebeste et al. 2021
+AN6392,Transcription factor,Extebeste et al. 2021
+AN6396,Transcription factor,Extebeste et al. 2021
+AN6430,Transcription factor,Extebeste et al. 2021
+AN6440,Transcription factor,Extebeste et al. 2021
+AN6446,Transcription factor,Extebeste et al. 2021
+AN6492,Transcription factor,Extebeste et al. 2021
+AN6503,Transcription factor,Extebeste et al. 2021
+AN6575,Transcription factor,Extebeste et al. 2021
+AN6578,Transcription factor,Extebeste et al. 2021
+AN6667,Transcription factor,Extebeste et al. 2021
+AN6684,Transcription factor,Extebeste et al. 2021
+AN6715,Transcription factor,Extebeste et al. 2021
+AN6733,Transcription factor,Extebeste et al. 2021
+AN6747,Transcription factor,Extebeste et al. 2021
+AN6759,Transcription factor,Extebeste et al. 2021
+AN6762,Transcription factor,Extebeste et al. 2021
+AN6788,Transcription factor,Extebeste et al. 2021
+AN6790,Transcription factor,Extebeste et al. 2021
+AN6832,Transcription factor,Extebeste et al. 2021
+AN6837,Transcription factor,Extebeste et al. 2021
+AN6846,Transcription factor,Extebeste et al. 2021
+AN6849,Transcription factor,Extebeste et al. 2021
+AN6858,Transcription factor,Extebeste et al. 2021
+AN6884,Transcription factor,Extebeste et al. 2021
+AN6889,Transcription factor,Extebeste et al. 2021
+AN6917,Transcription factor,Extebeste et al. 2021
+AN7012,Transcription factor,Extebeste et al. 2021
+AN7050,Transcription factor,Extebeste et al. 2021
+AN7061,Transcription factor,Extebeste et al. 2021
+AN7072,Transcription factor,Extebeste et al. 2021
+AN7073,Transcription factor,Extebeste et al. 2021
+AN7076,Transcription factor,Extebeste et al. 2021
+AN7118,Transcription factor,Extebeste et al. 2021
+AN7170,Transcription factor,Extebeste et al. 2021
+AN7174,Transcription factor,Extebeste et al. 2021
+AN7189,Transcription factor,Extebeste et al. 2021
+AN7190,Transcription factor,Extebeste et al. 2021
+AN7223,Transcription factor,Extebeste et al. 2021
+AN7330,Transcription factor,Extebeste et al. 2021
+AN7332,Transcription factor,Extebeste et al. 2021
+AN7343,Transcription factor,Extebeste et al. 2021
+AN7346,Transcription factor,Extebeste et al. 2021
+AN7376,Transcription factor,Extebeste et al. 2021
+AN7379,Transcription factor,Extebeste et al. 2021
+AN7434,Transcription factor,Extebeste et al. 2021
+AN7468,Transcription factor,Extebeste et al. 2021
+AN7507,Transcription factor,Extebeste et al. 2021
+AN7508,Transcription factor,Extebeste et al. 2021
+AN7513,Transcription factor,Extebeste et al. 2021
+AN7542,Transcription factor,Extebeste et al. 2021
+AN7545,Transcription factor,Extebeste et al. 2021
+AN7553,Transcription factor,Extebeste et al. 2021
+AN7580,Transcription factor,Extebeste et al. 2021
+AN7584,Transcription factor,Extebeste et al. 2021
+AN7592,Transcription factor,Extebeste et al. 2021
+AN7596,Transcription factor,Extebeste et al. 2021
+AN7610,Transcription factor,Extebeste et al. 2021
+AN7661,Transcription factor,Extebeste et al. 2021
+AN7734,Transcription factor,Extebeste et al. 2021
+AN7776,Transcription factor,Extebeste et al. 2021
+AN7788,Transcription factor,Extebeste et al. 2021
+AN7820,Transcription factor,Extebeste et al. 2021
+AN7867,Transcription factor,Extebeste et al. 2021
+AN7872,Transcription factor,Extebeste et al. 2021
+AN7896,Transcription factor,Extebeste et al. 2021
+AN7913,Transcription factor,Extebeste et al. 2021
+AN7919,Transcription factor,Extebeste et al. 2021
+AN7921,Transcription factor,Extebeste et al. 2021
+AN7923,Transcription factor,Extebeste et al. 2021
+AN7942,Transcription factor,Extebeste et al. 2021
+AN7951,Transcription factor,Extebeste et al. 2021
+AN7971,Transcription factor,Extebeste et al. 2021
+AN8076,Transcription factor,Extebeste et al. 2021
+AN8079,Transcription factor,Extebeste et al. 2021
+AN8103,Transcription factor,Extebeste et al. 2021
+AN8111,Transcription factor,Extebeste et al. 2021
+AN8125,Transcription factor,Extebeste et al. 2021
+AN8129,Transcription factor,Extebeste et al. 2021
+AN8161,Transcription factor,Extebeste et al. 2021
+AN8164,Transcription factor,Extebeste et al. 2021
+AN8177,Transcription factor,Extebeste et al. 2021
+AN8251,Transcription factor,Extebeste et al. 2021
+AN8271,Transcription factor,Extebeste et al. 2021
+AN8298,Transcription factor,Extebeste et al. 2021
+AN8345,Transcription factor,Extebeste et al. 2021
+AN8355,Transcription factor,Extebeste et al. 2021
+AN8357,Transcription factor,Extebeste et al. 2021
+AN8377,Transcription factor,Extebeste et al. 2021
+AN8391,Transcription factor,Extebeste et al. 2021
+AN8414,Transcription factor,Extebeste et al. 2021
+AN8426,Transcription factor,Extebeste et al. 2021
+AN8431,Transcription factor,Extebeste et al. 2021
+AN8441,Transcription factor,Extebeste et al. 2021
+AN8447,Transcription factor,Extebeste et al. 2021
+AN8460,Transcription factor,Extebeste et al. 2021
+AN8469,Transcription factor,Extebeste et al. 2021
+AN8473,Transcription factor,Extebeste et al. 2021
+AN8501,Transcription factor,Extebeste et al. 2021
+AN8506,Transcription factor,Extebeste et al. 2021
+AN8509,Transcription factor,Extebeste et al. 2021
+AN8529,Transcription factor,Extebeste et al. 2021
+AN8535,Transcription factor,Extebeste et al. 2021
+AN8590,Transcription factor,Extebeste et al. 2021
+AN8596,Transcription factor,Extebeste et al. 2021
+AN8636,Transcription factor,Extebeste et al. 2021
+AN8643,Transcription factor,Extebeste et al. 2021
+AN8645,Transcription factor,Extebeste et al. 2021
+AN8655,Transcription factor,Extebeste et al. 2021
+AN8666,Transcription factor,Extebeste et al. 2021
+AN8667,Transcription factor,Extebeste et al. 2021
+AN8676,Transcription factor,Extebeste et al. 2021
+AN8694,Transcription factor,Extebeste et al. 2021
+AN8732,Transcription factor,Extebeste et al. 2021
+AN8735,Transcription factor,Extebeste et al. 2021
+AN8741,Transcription factor,Extebeste et al. 2021
+AN8753,Transcription factor,Extebeste et al. 2021
+AN8772,Transcription factor,Extebeste et al. 2021
+AN8774,Transcription factor,Extebeste et al. 2021
+AN8778,Transcription factor,Extebeste et al. 2021
+AN8858,Transcription factor,Extebeste et al. 2021
+AN8885,Transcription factor,Extebeste et al. 2021
+AN8894,Transcription factor,Extebeste et al. 2021
+AN8902,Transcription factor,Extebeste et al. 2021
+AN8916,Transcription factor,Extebeste et al. 2021
+AN8918,Transcription factor,Extebeste et al. 2021
+AN8930,Transcription factor,Extebeste et al. 2021
+AN8938,Transcription factor,Extebeste et al. 2021
+AN8949,Transcription factor,Extebeste et al. 2021
+AN8973,Transcription factor,Extebeste et al. 2021
+AN8978,Transcription factor,Extebeste et al. 2021
+AN9013,Transcription factor,Extebeste et al. 2021
+AN9017,Transcription factor,Extebeste et al. 2021
+AN9025,Transcription factor,Extebeste et al. 2021
+AN9026,Transcription factor,Extebeste et al. 2021
+AN9043,Transcription factor,Extebeste et al. 2021
+AN9047,Transcription factor,Extebeste et al. 2021
+AN9050,Transcription factor,Extebeste et al. 2021
+AN9060,Transcription factor,Extebeste et al. 2021
+AN9117,Transcription factor,Extebeste et al. 2021
+AN9141,Transcription factor,Extebeste et al. 2021
+AN9147,Transcription factor,Extebeste et al. 2021
+AN9221,Transcription factor,Extebeste et al. 2021
+AN9236,Transcription factor,Extebeste et al. 2021
+AN9240,Transcription factor,Extebeste et al. 2021
+AN9283,Transcription factor,Extebeste et al. 2021
+AN9292,Transcription factor,Extebeste et al. 2021
+AN9293,Transcription factor,Extebeste et al. 2021
+AN9328,Transcription factor,Extebeste et al. 2021
+AN9358,Transcription factor,Extebeste et al. 2021
+AN9373,Transcription factor,Extebeste et al. 2021
+AN9395,Transcription factor,Extebeste et al. 2021
+AN9397,Transcription factor,Extebeste et al. 2021
+AN9404,Transcription factor,Extebeste et al. 2021
+AN9458,Transcription factor,Extebeste et al. 2021
+AN9492,Transcription factor,Extebeste et al. 2021
+AN9516,Transcription factor,Extebeste et al. 2021
+AN2520,GPCR,Lafon et al. 2006 Fungal Genetics & Biology
+AN3361,GPCR,Lafon et al. 2006 Fungal Genetics & Biology
+AN3387,GPCR,Lafon et al. 2006 Fungal Genetics & Biology
+AN3765,GPCR,Lafon et al. 2006 Fungal Genetics & Biology
+AN4932,GPCR,Lafon et al. 2006 Fungal Genetics & Biology
+AN5151,GPCR,Lafon et al. 2006 Fungal Genetics & Biology
+AN5508,GPCR,Lafon et al. 2006 Fungal Genetics & Biology
+AN5720,GPCR,Lafon et al. 2006 Fungal Genetics & Biology
+AN6680,GPCR,Lafon et al. 2006 Fungal Genetics & Biology
+AN7743,GPCR,Lafon et al. 2006 Fungal Genetics & Biology
+AN7795,GPCR,Lafon et al. 2006 Fungal Genetics & Biology
+AN8262,GPCR,Lafon et al. 2006 Fungal Genetics & Biology
+AN8348,GPCR,Lafon et al. 2006 Fungal Genetics & Biology
+AN9199,GPCR,Lafon et al. 2006 Fungal Genetics & Biology
+AN10946,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN4544,Phosphatase,Son & Osmani 2009
+AN4896,Phosphatase,Son & Osmani 2009
+AN5057,Phosphatase,Son & Osmani 2009
+AN6982,Phosphatase,Son & Osmani 2009
+AN0103,Phosphatase,Son & Osmani 2009
+AN0129,Phosphatase,Son & Osmani 2009
+AN0164,Phosphatase,Son & Osmani 2009
+AN0410,Phosphatase,Son & Osmani 2009
+AN0504,Phosphatase,Son & Osmani 2009
+AN0914,Phosphatase,Son & Osmani 2009
+AN10077,Phosphatase,Son & Osmani 2009
+AN10138,Phosphatase,Son & Osmani 2009
+AN10281,Phosphatase,Son & Osmani 2009
+AN10570,Phosphatase,Son & Osmani 2009
+AN1343,Phosphatase,Son & Osmani 2009
+AN1358,Phosphatase,Son & Osmani 2009
+AN1467,Phosphatase,Son & Osmani 2009
+AN2472,Phosphatase,Son & Osmani 2009
+AN2902,Phosphatase,Son & Osmani 2009
+AN3793,Phosphatase,Son & Osmani 2009
+AN3810,Phosphatase,Son & Osmani 2009
+AN3941,Phosphatase,Son & Osmani 2009
+AN4419,Phosphatase,Son & Osmani 2009
+AN4426,Phosphatase,Son & Osmani 2009
+AN5722,Phosphatase,Son & Osmani 2009
+AN6391,Phosphatase,Son & Osmani 2009
+AN6892,Phosphatase,Son & Osmani 2009
+AN8820,Phosphatase,Son & Osmani 2009
+AN10570 ,Phosphatase,Phosphotyrosine protein phosphatases I SUPERFAMILY SSF52788
+AN10780,Phosphatase,Phosphotyrosine protein phosphatases I SUPERFAMILY SSF52788
+AN10864,Phosphatase,Phosphotyrosine protein phosphatases I SUPERFAMILY SSF52788
+AN12322,Phosphatase,Phosphotyrosine protein phosphatases I SUPERFAMILY SSF52788
+AN9355,Phosphatase,Phosphotyrosine protein phosphatases I SUPERFAMILY SSF52788
+AN11786,Kinase,Protein kinase-like (PK-like) Protein kinase-like domain SUPERFAMILY SSF56112
+AN0464,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN0556,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN10093,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN10446,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN10532,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN11069,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN1148,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN12098,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN12436,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN1341,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN1796,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN2360,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN2457,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN2476,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN3937,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN3982,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN4495,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN4713,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN5655,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN5939,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN8622,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN9186,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN9402,Phosphatase,Metallo-dependent phosphatase SUPERFAMILY SSF56300
+AN5767,Phosphatase,Winkelstroter et al. 2015 G3 (Bethesda)
+AN4057,Phosphatase,Winkelstroter et al. 2015 G3 (Bethesda)

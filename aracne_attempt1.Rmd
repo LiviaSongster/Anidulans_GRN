@@ -1,0 +1,264 @@
+---
+title: "WGCNA_attempt1"
+author: "Livia Songster"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r prepare data}
+library(BiocManager)
+library(DESeq2)
+library(tximport)
+library(vsn)
+library(ggplot2)
+library(dplyr)
+library(doBy)
+library(rmarkdown)
+library(swamp)
+library(pheatmap)
+library(RColorBrewer)
+
+dir <- getwd()
+
+# Define the file path to the plots directory
+plots_dir <- "Plots"
+
+# Create the plots folder if it doesn't exist
+if (!dir.exists(plots_dir)) {
+  dir.create(plots_dir)
+}
+
+# Define the file path to the results directory
+results_dir <- "Results"
+
+# Create the results folder if it doesn't exist
+if (!dir.exists(results_dir)) {
+  dir.create(results_dir)
+}
+
+
+# read in metadata with filenames
+metadata <- read.csv("rnaseq-metadata-all.csv",header=TRUE, sep= ",")
+# metadata <- subset(metadata, Stage == "Germling")
+# metadata$Group <- factor(metadata$Group, levels = c("entrystrain",
+#                                                     "ribo.control",
+#                                                     "pxdA.null",
+#                                                     "hookA.null",
+#                                                     "vezA.null",
+#                                                     "pex14.null"))
+
+# remove rows with no mapping yet
+metadata <- subset(metadata,Salmon_perc_mapped > 40)
+print(metadata)
+
+# make sure all files are present
+all(file.exists(metadata$Salmon_File))
+
+# import data - first get file names
+files <- metadata$Salmon_File
+# associate those with sample ID
+names(files) <- paste(metadata$NewSample)
+
+# import transcript to gene conversion
+tx2gene <- read.csv("../WGCNA_aspergillus/Anidulans_genome_files/salmon_tx2gene.csv")
+
+# now import data using tximport
+txi <- tximport(files, type = "salmon",tx2gene = tx2gene)
+tail(txi$counts)
+
+# prepare DESeqDataset
+dds <- DESeqDataSetFromTximport(txi, metadata, ~Group)
+
+# # identify low-count genes that have a mean count below 30
+# #keep <- rowMeans(counts(dds)) >= 30
+# # Calculate the proportion of samples above 20 for each row
+# prop_above_10 <- rowMeans(assay(dds) >= 20)
+# 
+# # Identify rows where at least 80% of samples have a value above 20
+# keep <- rownames(dds)[prop_above_10 >= 0.8]
+# # keep <- rowMeans(counts(dds)) >= 20
+# 
+# # find percentage of genes that have been kept after applying filter for low counts
+# print(c("There are this many genes total:",length(dds)))
+# print(c("There are this many genes with mean count below 20:",length(dds)-length(keep)))
+# print(c("Percentage of genes with mean count ABOVE 20:",length(keep) / length(dds) * 100))
+# 
+# # now remove the low-count genes
+# dds <- dds[keep,]
+
+# # run DESeq
+# dds <- DESeq(dds)
+# 
+# # save deseq dataset
+# # write results to a file
+# readr::write_rds(dds,
+#   file = file.path("Results", "dds_results_3.RDS")
+# )
+
+# import file
+dds <- readRDS(file = file.path("Results", "dds_results_3.RDS"))
+
+
+# variance-stabilizing transformation of the data
+vsd <- vst(dds, blind = FALSE) 
+
+# next median-center the data
+vsd_mc <- vsd
+assay(vsd_mc)<- quickadjust.zero(assay(vsd), factor(metadata$Group))
+
+# PCA PLOT of vsd data
+plotPCA(vsd, intgroup = c("Group"))
+plotPCA(vsd_mc, intgroup = c("Group"))
+
+
+# run pca analysis using prcomp function and write csv with output data
+
+
+pca <- prcomp(t(assay(vsd)))
+#summary(pca)
+#screeplot(pca)
+pcaData <- cbind(metadata[,1:6], pca$x)
+ggplot(pcaData, aes(PC1,PC2,color=Group, shape = Stage)) +
+  geom_point()
+
+ggsave("Results/pca_uncorr_3.png",width=12,height=6,dpi=300)
+write.csv(pcaData,"Results/pca_data_vsd_uncorr_3.csv",row.names=FALSE)
+
+
+pca_mc <- prcomp(t(assay(vsd_mc)))
+#summary(pca_mc)
+#screeplot(pca_mc)
+pcaData_mc <- cbind(metadata[,1:6], pca_mc$x)
+ggplot(pcaData_mc, aes(PC1,PC2,color=Genotype, shape = Stage)) +
+  geom_point()
+ggsave("Results/pca_zeromedian_3.png",width=12,height=6,dpi=300)
+
+write.csv(pcaData_mc,"Results/pca_data_vsd_zeromedian_3.csv",row.names=FALSE)
+
+
+
+# 
+# explained_variance <- data.frame(PC= paste0("PC",1:243),
+#                                var_explained=(pca$sdev)^2/sum((pca$sdev)^2))
+# 
+# 
+# 
+# ggplot(explained_variance[1:9,], 
+#              aes(x=PC,
+#              y=var_explained, 
+#              group=1))+
+#   geom_point()+
+#   geom_line()+
+#   labs(title="PCA")
+# write.table(res,"Results/summary_pca_data_vsd_2.txt")
+# 
+
+
+# rld <- rlog(dds, blind = FALSE)
+
+# # plot the stabilization
+# msd_dds <- meanSdPlot(assay(dds))
+# msd_vsd <- meanSdPlot(assay(vsd))
+# # msd_rld <- meanSdPlot(assay(rld))
+# 
+# 
+# msd_dds$gg + ggtitle("Untransformed data") + ylim(-1,100)
+# msd_vsd$gg + ggtitle("Variance stabilized transformation")
+# # msd_rld$gg + ggtitle("Regularized-logarithm transformation")
+
+# Retrieve the normalized data from the `DESeqDataSet` & transpose
+# THIS IS FOR ARACNE-AP
+# normalized_counts <- as.data.frame(assay(dds))
+normalized_counts <- as.data.frame(assay(vsd_mc))
+normalized_counts$gene <- row.names(normalized_counts)
+# reorder columns
+normalized_counts <- normalized_counts[, c(ncol(normalized_counts), 1:(ncol(normalized_counts)-1))]
+# transpose the matrix and save as a txt for aracne-ap
+write.table(normalized_counts,"Results/matrix3.txt", sep = "\t",row.names = FALSE,quote = FALSE) 
+
+# quick heatmap and pca plot
+
+# calculate sample distances using vsd
+sampleDists <- dist(t(assay(vsd)))
+
+sampleDistMatrix <- as.matrix( sampleDists )
+#rownames(sampleDistMatrix) <- paste( vsd$Group, vsd$Sample_ID, sep = " - " )
+colnames(sampleDistMatrix) <- vsd$Group
+colors <- colorRampPalette( rev(brewer.pal(9, "Blues")) )(255)
+# heatmap it
+pheatmap(sampleDistMatrix,
+         clustering_distance_rows = sampleDists,
+         clustering_distance_cols = sampleDists,
+         col = colors)
+
+# calculate sample distances using vsd
+sampleDists <- dist(t(assay(vsd_mc)))
+
+sampleDistMatrix <- as.matrix( sampleDists )
+#rownames(sampleDistMatrix) <- paste( vsd_mc$Group, vsd_mc$Sample_ID, sep = " - " )
+colnames(sampleDistMatrix) <- vsd_mc$Group
+colors <- colorRampPalette( rev(brewer.pal(9, "Blues")) )(255)
+# heatmap it
+pheatmap(sampleDistMatrix,
+         clustering_distance_rows = sampleDists,
+         clustering_distance_cols = sampleDists,
+         col = colors)
+
+
+# # visualize removal of batch effects
+# # make new vsd for this
+# vsd2 <- vsd
+# mat <- assay(vsd2)
+# mm <- model.matrix(~Group, colData(vsd2))
+# # use limma to remove the batch effect from group/dataset
+# mat <- limma::removeBatchEffect(mat, batch=vsd$Group, design=mm)
+# # now reassign to vsd
+# assay(vsd2) <- mat
+# # and plot it on PCA
+# plotPCA(vsd2, intgroup = c("Group"))
+# 
+# # run pca analysis using prcomp function and write csv with output data
+# pca2 <- prcomp(t(assay(vsd2)))
+# summary(pca2)
+# pcaData2 <- cbind(metadata[,1:6], pca2$x)
+# write.csv(pcaData2,"Results/pca_data_vsd_batchremoval.csv",row.names=FALSE)
+# normalized_counts <- t(assay(vsd2))
+
+
+```
+
+
+```{r}
+# read in the network node list
+nodes <- read.csv("Output3/networkdefault node.csv",header=TRUE)
+nodes$newsymbol = nodes$name
+
+# merge with gene symbol list
+complete_genes <- read.csv("../WGCNA_aspergillus/Anidulans_genome_files/Anidulans_63_complete_gene_list.csv")
+symbols <- complete_genes[,c("gene","symbol")]
+colnames(symbols)[1] <- "name"
+allsymbols <- merge(nodes,symbols,by = "name",all.x=TRUE)
+
+# now replace empty cells for symbol with value from newsymbol
+allsymbols$symbol <- ifelse(is.na(allsymbols$symbol), allsymbols$newsymbol, allsymbols$symbol)
+
+allsymbols <- allsymbols[,c("name","selected","shared.name","symbol")]
+
+# add module membership, gene significance
+moduleinfo <- read.csv("../WGCNA_aspergillus/geneInfo_allmodules_perox_flux.csv")
+
+moduleinfo <- moduleinfo[,c("gene","moduleColor","Abs.GS.flux.","MM.darkred")]
+
+# also - add type of node; GPCR, phosphatase, kinase, TF, or target
+regulators <- read.csv("Results/regulators_metadata.csv")
+
+moduleinfo2 <- merge(moduleinfo,regulators,by="gene",all=TRUE)
+moduleinfo2$node_type[is.na(moduleinfo2$node_type)] <- "Target"
+
+
+network4 <- merge(allsymbols,moduleinfo2,by.x="name",by.y="gene",all.x=TRUE)
+
+
+write.csv(network4,"network_labeled_nodes_3.csv",row.names=FALSE,quote = FALSE)
+```
+
